@@ -1,0 +1,425 @@
+.App {
+  text-align: center;
+  z-index: 1;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+[aria-hidden="true"] { 
+  display: none; 
+}
+
+ul, h2 {
+  padding:0; 
+  margin: 0;
+}
+
+.Slide {
+  padding: 5vw;
+  height: 100vmax;
+  color: white;
+}
+
+.SlideContent{
+  display:inline-block;
+  border-radius: 2vw;
+  padding: 3vw;
+  background: rgba(0, 0, 0, 0.65);
+  font-size: medium;
+  text-align: left;
+}
+.Title {
+  padding-bottom:2%;
+}
+
+.Controls {
+  position: absolute;
+  display: flex;
+  padding: 5vw;
+  right: 5vw;
+  bottom: 0;
+}
+
+.SlideNav {
+  position: absolute;
+  display: flex;
+  padding: 5vw;
+  left: 5vw;
+  bottom: 0;
+}
+
+.IconButton {
+  background:none;
+  border: none;
+  opacity: .9;
+  font-size: 2rem;
+  color: rgb(199, 184, 184);
+}
+
+.SlideNavItemOff {
+  background:none;
+  border: none;
+  opacity: .6;
+  font-size: 2rem;
+  color: rgb(199, 184, 184);
+}
+
+.SlideNavItemOn {
+  background:none;
+  border: none;
+  opacity: 1;
+  font-size: 2rem;
+  color: rgb(199, 184, 184);
+}
+
+.ProgressBar {
+  position: absolute;
+  display: flex;
+  height: 3%;
+  opacity: .8;
+  color: rgb(199, 184, 184);
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.ProgressBar div {
+  opacity: .8;
+  background-color: rgb(199, 184, 184);
+}
+
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  
+}
+
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} Black
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.App {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+
+button {
+  font-size: .9rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 3px;
+  padding: .3rem 1rem;
+  margin-left: .5rem;
+}
+
+.button-default {
+  background: #247BA0;
+  color: #fff;
+}
+
+
+
+
+
+.modali-overlay {
+  position: center;
+  top: 0;
+  left: 0;
+  z-index: 1150;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: .5;
+}
+
+.modali-wrapper {
+  display: inline-table;
+  position: center;
+  padding: .5rem;
+  top: 0;
+  left: 0;
+  z-index: 1150;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+}
+
+.modali {
+  z-index: 1150;
+  background: white;
+  position: relative;
+  margin: 1.75rem auto;
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+.modali-content {
+  pointer-events: auto;
+}
+
+.modali-header {
+  display: flex;
+  align-items: flex-start;
+  padding: 1.5rem 1.5rem .5rem 1.5rem;
+}
+
+.modali-header .modali-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.modali-close-button {
+  padding: 1rem;
+  background: white;
+  margin: -1rem -1rem -1rem auto;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  opacity: .3;
+  cursor: pointer;
+  border: none;
+  outline: 0 !important;
+}
+
+.modali-close-button:hover {
+  opacity: .8;
+  text-decoration: none;
+}
+
+.modali-body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fff;
+  border-radius: .3rem;
+}
+
+.modali-body-style {
+  padding: .5rem 1.5rem;
+}
+
+.modali-footer {
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (min-width: 1025px) {
+  .modali-open {
+    padding-right: 15px;
+  }
+}
+
+.modali-open {
+  overflow: hidden;
+}
+
+/* Size Classes */
+
+.modali-size-regular {
+  min-width: 100%;
+  max-width: 500px;
+}
+
+@media (min-width: 500px) {
+  .modali-size-regular {
+    min-width: 500px !important;
+  }
+}
+
+.modali-size-large {
+  min-width: 100%;
+  max-width: 800px;
+}
+
+@media (min-width: 500px) {
+  .modali-size-large {
+    min-width: 800px !important;
+  }
+}
+
+/* Position Classes */
+
+.modali-wrapper-centered {
+  top: 40% !important;
+}
+
+@media (min-width: 1000px) {
+  .modali-wrapper-centered {
+    top: 0 !important;
+    display: flex !important;
+    align-items: center;
+  }
+}
+
+/* Button Classes */
+
+.modali-button {
+  font-size: .9rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 3px;
+  padding: .3rem 1rem;
+  margin-left: .5rem;
+}
+
+.modali-button-cancel {
+  background: #fff;
+  color: #000;
+}
+
+.modali-button-destructive {
+  background: #FF1654;
+  color: #fff;
+}
+
+.modali-button-default {
+  background: #247BA0;
+  color: #fff;
+}
+
+/* Animation Classes */
+
+.modali-animated {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.modali-animation-fade-in {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 30%, 0);
+    transform: translate3d(0, 30%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 30%, 0);
+    transform: translate3d(0, 30%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  top: 10%;
+}
+
+.right {
+  right: 0;
+  top: 5%;
+}
+
+.gridList {
+  width: auto !important;
+  height: 450;
+}
+
+.total-row{
+  padding: 15px;
+}
+
+.scroll {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  text-align: left;
+  border-bottom: 2px solid black;
+}
+
+thead button {
+  border: 0;
+  border-radius: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: inherit;
+  padding: 0.5em;
+  margin-bottom: 1px;
+}
+
+thead button.ascending::after {
+  content: '↓';
+  display: inline-block;
+  margin-left: 1em;
+}
+
+thead button.descending::after {
+  content: '↑';
+  display: inline-block;
+  margin-left: 1em;
+}
+
+tbody td {
+  padding: 0.5em;
+  border-bottom: 1px solid #ccc;
+}
+
+tbody tr:hover {
+  background-color: #eee;
+}

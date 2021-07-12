@@ -1,0 +1,69 @@
+{
+  "name": "vending-machine",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@devexpress/dx-core": "^2.6.4",
+    "@devexpress/dx-react-core": "^2.6.4",
+    "@devexpress/dx-react-grid": "^2.6.4",
+    "@devexpress/dx-react-grid-material-ui": "^2.6.4",
+    "@emotion/core": "^10.0.28",
+    "@material-ui/core": "^4.10.1",
+    "@material-ui/icons": "^4.9.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "@types/react-transition-group": "^4.4.0",
+    "@yaireo/validator": "^3.3.5",
+    "ag-grid-community": "^23.2.1",
+    "ag-grid-react": "^23.2.1",
+    "axios": "^0.19.2",
+    "mdbreact": "^4.27.0",
+    "modali": "^1.2.0",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-awesome-slider": "^4.1.0",
+    "react-bootstrap-carousel": "^4.0.6",
+    "react-bootstrap-validation": "^0.1.11",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-dom": "^16.13.1",
+    "react-gesture-responder": "^2.1.0",
+    "react-hook-form": "^6.0.8",
+    "react-icons": "^3.10.0",
+    "react-image-enlarger": "^1.1.0",
+    "react-image-lightbox": "^5.1.1",
+    "react-image-viewer-zoom": "^1.0.36",
+    "react-inline-editing": "^1.0.10",
+    "react-modal-image": "^2.5.0",
+    "react-responsive-carousel": "^3.2.9",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-scrollbar": "^0.5.6",
+    "react-scrollbar-js": "^1.0.1",
+    "react-select": "^3.1.0",
+    "react-transition-group": "^1.2.1",
+    "reactjs-popup": "^1.5.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "proxy": "http://localhost:8080",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
